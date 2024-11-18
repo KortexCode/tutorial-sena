@@ -150,13 +150,13 @@ button {
     margin-right: 0.5rem;
 }
 
-#resetOutput {
+.resetOutput {
     background-color: #e57373;
     color: #121212;
     transition: background-color 0.3s;
 }
 
-#resetOutput:hover {
+.resetOutput:hover {
     background-color: #c62828;
 }
 
