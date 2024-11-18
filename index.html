@@ -81,7 +81,43 @@
                     del sistema y volviendo al programa principal cuando están listas.</dd>
             </dl>
         </section>
-        <section id="callbacks">
+        <section id="introduccion">
+            <h2>Introducción</h2>
+            <p>
+                El asincronismo en JavaScript es un modelo de programación que permite realizar múltiples tareas sin
+                bloquear el
+                flujo del programa.
+                Esto es esencial en aplicaciones modernas que necesitan interactuar con APIs, manejar eventos del
+                usuario o
+                procesar grandes cantidades de datos.
+            </p>
+            <p>
+                JavaScript, siendo un lenguaje de un solo hilo, utiliza mecanismos como el <strong>event loop</strong>
+                para
+                manejar tareas asincrónicas. Sin embargo, escribir código asincrónico puede ser complejo si no se
+                utilizan las
+                herramientas adecuadas.
+            </p>
+            <p>
+                En este tutorial aprenderás sobre:
+            </p>
+            <ul>
+                <li><strong>Callbacks</strong>: Funciones que se ejecutan después de que otra función haya completado su
+                    tarea.
+                </li>
+                <li><strong>Promesas</strong>: Una forma estructurada de manejar operaciones asincrónicas y evitar el
+                    "infierno
+                    de callbacks".</li>
+                <li><strong>Async/Await</strong>: Una sintaxis moderna y clara para trabajar con promesas.</li>
+            </ul>
+            <p>
+                A medida que explores cada tema, encontrarás ejemplos prácticos que puedes ejecutar y analizar para
+                entender
+                cómo manejar asincronismo en JavaScript de manera eficiente.
+            </p>
+        </section>
+
+        <section id="callbacks" class="section-content">
             <h2>Callbacks</h2>
             <p>
                 Un <strong>callback</strong> es una función que se pasa como argumento a otra función, para que esta la
@@ -110,7 +146,7 @@
             </div>
 
         </section>
-        <section id="promesas">
+        <section id="promesas" class="section-content">
             <h2>Promesas</h2>
             <p>
                 Una <strong>promesa</strong> es un objeto en JavaScript que representa la eventual finalización (o
@@ -136,6 +172,35 @@
                 <!-- Aquí se mostrará la salida del ejemplo -->
             </div>
         </section>
+
+        <section id="async-await" class="section-content">
+            <h2>Async/Await</h2>
+            <p>
+                El método <strong>fetch</strong> es una API moderna de JavaScript para realizar solicitudes HTTP. Es más
+                flexible y legible que métodos más antiguos como <code>XMLHttpRequest</code>.
+                Aunque `fetch` devuelve una promesa que puede manejarse con <code>.then()</code>, el uso de
+                <strong>async/await</strong> hace que el código sea más claro y fácil de leer.
+            </p>
+
+            <p>Ejemplo de código:</p>
+            <div class="code-image">
+                <!-- Aquí debes agregar la imagen del código -->
+                <img src="./assets/asyncAwaitImg.png" alt="Código de ejemplo de Async/Await con fetch">
+            </div>
+
+            <button id="runAsyncAwaitExample">Ejecutar Ejemplo</button>
+            <button id="resetAsyncAwaitOutput">Resetear</button>
+            <div id="asyncAwaitOutput1" class="output">
+                <!-- Aquí se mostrará la salida del ejemplo -->
+            </div>
+            <div class="async-await__content">
+                <h3 id="async-await__title"></h3>
+                <img id="asyncAwaitOutput2" class="imgAsync" src="" alt="Esperando datos..">
+                <!-- Aquí se mostrará la salida del ejemplo -->
+                </img>
+            </div>
+        </section>
+
 
     </main>
     <footer>

@@ -81,6 +81,28 @@ dd {
     line-height: 1.6;
 }
 
+#introduccion {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+}
+
+#introduccion h2 {
+    color: var(--mainText);
+}
+
+#introduccion p,
+#introduccion ul {
+    line-height: 1.6;
+}
+
+#introduccion ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
 /* Estilo para la sección de Callbacks */
 #callbacks {
     margin: 2rem 0;
@@ -89,11 +111,11 @@ dd {
     border-radius: 8px;
 }
 
-#callbacks h2 {
-    color: #00bcd4;
+.section-content h2 {
+    color: var(--mainText);
 }
 
-#callbacks p {
+.section-content p {
     line-height: 1.6;
 }
 
@@ -104,12 +126,12 @@ dd {
 
 .code-image img {
     max-width: 100%;
-    border: 2px solid #00bcd4;
+    border: 2px solid var(--mainText);
     border-radius: 8px;
 }
 
 button {
-    background-color: #00bcd4;
+    background-color: var(--mainText);
     color: #121212;
     border: none;
     padding: 0.5rem 1rem;
@@ -147,6 +169,15 @@ button {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     font-family: monospace;
+}
+.async-await__content {
+    width: 100%;
+    height: auto;
+    padding: 8px;
+}
+#async-await .imgAsync {
+    width: 300px;
+    height: 200px;
 }
 
 footer {

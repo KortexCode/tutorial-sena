@@ -69,3 +69,44 @@ document.getElementById("resetPromiseOutput").addEventListener("click", () => {
   document.getElementById("promiseOutput1").textContent = "";
   document.getElementById("promiseOutput2").textContent = "";
 });
+
+/*Ejemplo de Async/Await con fetch*/
+document
+  .getElementById("runAsyncAwaitExample")
+  .addEventListener("click", async () => {
+    const apiUrl = "https://jsonplaceholder.typicode.com/photos/5"; // API de ejemplo
+
+    //Función síncrona
+    const firtsProcess = () => {
+      document.getElementById("asyncAwaitOutput1").textContent =
+        "datos del hilo principal, síncrono";
+    };
+
+    // Función asíncrona para obtener datos
+    const fetchDataWithAsyncAwait = async () => {
+      try {
+        const response = await fetch(apiUrl);
+        if (!response.ok) {
+          throw new Error("Error al obtener los datos");
+        }
+        const data = await response.json();
+        document.getElementById("async-await__title").textContent = data.title;
+        document.getElementById("asyncAwaitOutput2").src = data.url;
+      } catch (error) {
+        throw error;
+      }
+    };
+    //Ejecutamos la función asíncrona, los datos cargan ligeramente después de ejecutarse firtProcess()
+    fetchDataWithAsyncAwait();
+    //Los resultados de esta función se obtendrán primero que la función asíncrona
+    firtsProcess();
+  });
+
+// Botón para limpiar la salida
+document
+  .getElementById("resetAsyncAwaitOutput")
+  .addEventListener("click", () => {
+    document.getElementById("asyncAwaitOutput1").textContent = "";
+    document.getElementById("async-await__title").textContent = "";
+    document.getElementById("asyncAwaitOutput2").src = "";
+  });
