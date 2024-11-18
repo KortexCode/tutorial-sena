@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tutorial sobre asincronismo en JavaScript">
+    <title>Tutorial de Asincronismo en JavaScript</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tutorial de Asincronismo en JavaScript</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#glosario">Glosario</a></li>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#callbacks">Callbacks</a></li>
+            <li><a href="#promesas">Promesas</a></li>
+            <li><a href="#async-await">Async/Await</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="glosario">
+            <h2>Glosario</h2>
+            <dl>
+                <dt>Thread</dt>
+                <dd>
+                    Los Thread (Hilo). Javascript permite realizar programación multihilos en este entorno. En
+                    realidad,simula la creación
+                    y ejecución de hilos, pero para el desarrollador es lo mismo. Ésto simplifica muchísimo la
+                    creaciónde aplicaciones
+                    Javascript.
+                </dd>
+                <dt>Bloqueante</dt>
+                <dd>Una tarea no devuelve el control de la implementación o de la lógica que esté haciendo hasta que sea
+                    completado. Por
+                    ejemplo el alert() el cual no dejará continuar hasta que le des ok a la ventana. Una llamada u
+                    operación bloqueante no
+                    devuelve el control a la aplicación hasta que se ha completado. Por tanto, el thread queda bloqueado
+                    en estado de
+                    espera.</dd>
+                <dt>No bloqueante</dt>
+                <dd>
+                    Una tarea devuelve inmediatamente el control para poder continuar sin necesidad de detener nuestra
+                    aplicación,
+                    devolviendo los datos, y continuar con la lógica sea el caso. Una tarea no bloqueante se devuelve
+                    inmediatamente con
+                    independencia del resultado. Si se completó, devuelve los datos. Si no, un error.
+                </dd>
+                <dt>Síncrono</dt>
+                <dd>
+                    Las tareas se ejecutan de forma secuencial, deben esperar a que se completen para continuar con la
+                    siguiente tarea. Se
+                    ejecuta tarea por tarea
+                </dd>
+                <dt>Asincronismo</dt>
+                <dd>Es un modelo de programación que permite realizar múltiples tareas al mismo tiempo, sin bloquear el
+                    flujo
+                    del programa.</dd>
+
+                <dt>Callback</dt>
+                <dd>Una función que se pasa como argumento a otra función y se ejecuta después de que esta haya
+                    completado su
+                    tarea.</dd>
+
+                <dt>Promesa</dt>
+                <dd>Un objeto que representa un valor que puede estar disponible ahora, en el futuro o nunca. Ayuda a
+                    manejar
+                    operaciones asincrónicas de manera más estructurada.</dd>
+
+                <dt>Async/Await</dt>
+                <dd>Una sintaxis moderna para manejar promesas que hace que el código sea más legible y fácil de
+                    escribir.</dd>
+
+                <dt>Event Loop</dt>
+                <dd>Un mecanismo que permite a JavaScript realizar operaciones no bloqueantes, delegando tareas a otras
+                    partes
+                    del sistema y volviendo al programa principal cuando están listas.</dd>
+            </dl>
+        </section>
+        <section id="callbacks">
+            <h2>Callbacks</h2>
+            <p>
+                Un <strong>callback</strong> es una función que se pasa como argumento a otra función, para que esta la
+                ejecute
+                en un momento futuro,
+                generalmente después de completar una operación asincrónica. Son útiles para manejar tareas que tardan
+                en
+                completarse, como llamadas a una API o temporizadores.
+            </p>
+
+            <p>Ejemplo de código:</p>
+            <div class="code-image">
+                <!-- Aquí debes agregar la imagen del código -->
+                <img src="./assets/callbackImg.png" alt="Código de ejemplo de callback">
+            </div>
+
+            <button id="runCallbackExample">Ejecutar Ejemplo</button>
+            <button id="resetOutput">Resetear</button>
+
+
+            <div id="callbackOutput1" class="output">
+                <!-- Aquí se mostrará la salida del ejemplo -->
+            </div>
+            <div id="callbackOutput2" class="output">
+                <!-- Aquí se mostrará la salida del ejemplo -->
+            </div>
+
+        </section>
+        <section id="promesas">
+            <h2>Promesas</h2>
+            <p>
+                Una <strong>promesa</strong> es un objeto en JavaScript que representa la eventual finalización (o
+                falla) de una
+                operación asincrónica
+                y su valor resultante. Permiten manejar tareas asincrónicas de manera más estructurada, evitando el
+                "callback
+                hell".
+            </p>
+
+            <p>Ejemplo de código:</p>
+            <div class="code-image">
+                <!-- Aquí debes agregar la imagen del código -->
+                <img src="./assets/promiseImg.png" alt="Código de ejemplo de Promesas">
+            </div>
+
+            <button id="runPromiseExample">Ejecutar Ejemplo</button>
+            <button id="resetPromiseOutput">Resetear</button>
+            <div id="promiseOutput1" class="output">
+                <!-- Aquí se mostrará la salida del ejemplo -->
+            </div>
+            <div id="promiseOutput2" class="output">
+                <!-- Aquí se mostrará la salida del ejemplo -->
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>© 2024 - Tutorial de Asincronismo en JavaScript</p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>

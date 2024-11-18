@@ -1,0 +1,157 @@
+/* styles.css */
+:root {
+
+    --mainText: #00bcd4;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: var(--mainText);
+}
+
+nav {
+    background-color: #1e1e1e;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--mainText);
+    color: #121212;
+    border-radius: 5px;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Glosario */
+dl {
+    text-align: left;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+dt {
+    font-weight: bold;
+    color: var(--mainText);
+    margin-top: 1rem;
+}
+
+dd {
+    margin-left: 1rem;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Estilo para la sección de Callbacks */
+#callbacks {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+}
+
+#callbacks h2 {
+    color: #00bcd4;
+}
+
+#callbacks p {
+    line-height: 1.6;
+}
+
+.code-image {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.code-image img {
+    max-width: 100%;
+    border: 2px solid #00bcd4;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #00bcd4;
+    color: #121212;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0199a6;
+}
+
+/* Botón de reset */
+button {
+    margin-right: 0.5rem;
+}
+
+#resetOutput {
+    background-color: #e57373;
+    color: #121212;
+    transition: background-color 0.3s;
+}
+
+#resetOutput:hover {
+    background-color: #c62828;
+}
+
+.output {
+    height: 10px;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #292929;
+    color: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-family: monospace;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    color: #8c8c8c;
+}
