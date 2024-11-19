@@ -1,8 +1,8 @@
-# Tutotial-Sena
+# Tutorial-Sena
 
 Este es un proyecto de aprendizaje Sena donde se desarrolla un sitio web con Html, CSS y Javascript vanilla para creación de un tutorial sobre asincronismo.
 
-## Applied Concepts
+## Conceptos Aplicados
 
 - Frontend
 - Api Rest
