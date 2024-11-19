@@ -2,28 +2,26 @@
 
 /*Ejemplo de Callbacks*/
 document.getElementById("runCallbackExample").addEventListener("click", () => {
-  // Función que simula una operación proceso donde se solicitan datos síncronos y asincronos
+  //Función que simula un proceso asincrono
   const fetchData = (callback) => {
-    const firtsProcess = () => {
-      document.getElementById("callbackOutput1").textContent =
-        "datos del hilo principal, síncrono";
-    };
-
     setTimeout(() => {
       const data = "Datos del hilo paralelo después de 2 segundos, asíncrono.";
       callback(data);
     }, 2000);
-
-    firtsProcess(); //Los resultados de esta función se obtendrán primero que el setTimeout
   };
-
-  // Callback que procesa los datos
+  //Función síncrona
+  const firtsProcess = () => {
+    document.getElementById("callbackOutput1").textContent =
+      "datos del hilo principal, síncrono";
+  };
+  //Callback que procesa los datos
   const processData = (data) => {
     document.getElementById("callbackOutput2").textContent = `${data}`;
   };
-
-  // Ejecutar la función con un callback
+  //Ejecutar la función pasando un callback.
   fetchData(processData);
+  //Los resultados de esta función se obtendrán primero que fetchData()
+  firtsProcess();
 });
 
 // Botón para limpiar la salida

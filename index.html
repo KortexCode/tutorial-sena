@@ -11,19 +11,19 @@
 
 <body>
     <header>
-        <h1>Tutorial de Asincronismo en JavaScript</h1>
+        <nav class="index-bar">
+            <ul>
+                <li><a href="#glosario">Glosario</a></li>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#callbacks">Callbacks</a></li>
+                <li><a href="#promesas">Promesas</a></li>
+                <li><a href="#async-await">Async/Await</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#glosario">Glosario</a></li>
-            <li><a href="#introduccion">Introducción</a></li>
-            <li><a href="#callbacks">Callbacks</a></li>
-            <li><a href="#promesas">Promesas</a></li>
-            <li><a href="#async-await">Async/Await</a></li>
-        </ul>
-    </nav>
     <main>
-        <section id="glosario">
+        <h1>Tutorial de Asincronismo en JavaScript</h1>
+        <section id="glosario" class="content-glosario">
             <h2>Glosario</h2>
             <dl>
                 <dt>Thread</dt>
@@ -116,7 +116,7 @@
                 completarse, como llamadas a una API o temporizadores.
             </p>
 
-            <p>Ejemplo de código:</p>
+            <p class="example-code">Ejemplo de código:</p>
             <div class="code-image">
                 <!-- Aquí debes agregar la imagen del código -->
                 <img src="./assets/callbackImg.png" alt="Código de ejemplo de callback">
@@ -146,7 +146,7 @@
                 hell".
             </p>
 
-            <p>Ejemplo de código:</p>
+            <p class="example-code">Ejemplo de código:</p>
             <div class="code-image">
                 <!-- Aquí debes agregar la imagen del código -->
                 <img src="./assets/promiseImg.png" alt="Código de ejemplo de Promesas">
@@ -172,7 +172,7 @@
                 <strong>async/await</strong> hace que el código sea más claro y fácil de leer.
             </p>
 
-            <p>Ejemplo de código:</p>
+            <p class="example-code">Ejemplo de código:</p>
             <div class="code-image">
                 <!-- Aquí debes agregar la imagen del código -->
                 <img src="./assets/asyncAwaitImg.png" alt="Código de ejemplo de Async/Await con fetch">
@@ -194,7 +194,7 @@
 
     </main>
     <footer>
-        <p>© 2024 - Tutorial de Asincronismo en JavaScript</p>
+        <p>© 2024 - Tutorial de Asincronismo en JavaScript, KortexCode</p>
     </footer>
     <script src="./main.js"></script>
 </body>

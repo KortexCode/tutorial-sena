@@ -1,10 +1,12 @@
 /* styles.css */
 :root {
 
-    --mainText: #00bcd4;
+    /* --mainText: #00bcd4; */
+    --mainText: #31fff5;
 }
 
 body {
+    position: relative;
     margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #121212;
@@ -12,22 +14,26 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     text-align: center;
     padding: 1rem;
     background-color: #1e1e1e;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-header h1 {
+h1 {
+    display: inline-block;
     margin: 0;
+    margin-top: 60px;
     font-size: 2rem;
     color: var(--mainText);
 }
 
-nav {
+nav .index-bar{
     background-color: #1e1e1e;
     padding: 1rem 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 nav ul {
@@ -59,6 +65,11 @@ main {
 }
 
 /* Glosario */
+.content-glosario {
+    display: inline-block;
+    margin-top: 60px;
+}
+
 dl {
     text-align: left;
     max-width: 600px;
@@ -148,6 +159,7 @@ button:hover {
 /* Botón de reset */
 button {
     margin-right: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .resetOutput {
@@ -178,6 +190,10 @@ button {
 #async-await .imgAsync {
     width: 300px;
     height: 200px;
+}
+
+.section-content .example-code {
+    font-weight: 600;
 }
 
 footer {
