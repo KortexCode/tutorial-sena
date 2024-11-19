@@ -1,2 +1,14 @@
-# tutorial-sena
-Diseño con html, css y Javascript básico para la realización de una página web donse se muestre un tutorial sobre asincronismo en JS.
+# Tutotial-Sena
+
+Este es un proyecto de aprendizaje Sena donde se desarrolla un sitio web con Html, CSS y Javascript vanilla para creación de un tutorial sobre asincronismo.
+
+## Applied Concepts
+
+- Frontend
+- Api Rest
+- Asincronismo
+
+## API
+
+Puedes consultar este sitioweb donde fue tomada la Api para el ejercicio con async await
+Aquí [JSONPlaceholder ](https://jsonplaceholder.typicode.com)
